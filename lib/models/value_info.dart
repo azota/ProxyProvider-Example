@@ -1,11 +1,18 @@
 import 'dart:math';
+
 import 'package:flutter/foundation.dart';
+
 import 'counter.dart';
 
 class ValueInfoModel with ChangeNotifier {
+  ValueInfoModel(this._value) {
+    print('ValueInfoModel > constructor: $_value');
+  }
+
   late int _value;
 
   void update(CounterModel counter) {
+    print('ValueInfoModel > update: ${counter.counter}');
     _value = counter.counter;
     notifyListeners();
   }

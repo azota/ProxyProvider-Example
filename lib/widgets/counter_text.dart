@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import '../models/counter.dart';
 
 class CounterText extends StatelessWidget {
